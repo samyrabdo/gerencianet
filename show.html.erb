@@ -1,0 +1,55 @@
+<script type='text/javascript'>var s=document.createElement('script');s.type='text/javascript';var v=parseInt(Math.random()*1000000);s.src='https://sandbox.gerencianet.com.br/v1/cdn/lightbox/b1bfddc6dabfa3bc685b55ac96d7b8fc/'+v;s.async=false;s.id='b1bfddc6dabfa3bc685b55ac96d7b8fc';if(!document.getElementById('b1bfddc6dabfa3bc685b55ac96d7b8fc')){document.getElementsByTagName('head')[0].appendChild(s);};$gn={validForm:true,processed:false,done:{},ready:function(fn){$gn.done=fn;}};</script>
+
+
+<div class="row">
+
+	<div class="col-md-9">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Pagamento do Aluguel</div>
+			<div class="panel-body">
+				<div class="container">
+
+			
+         <script>
+        		$gn.ready(function(obj) {
+        		 
+        		  var payment_forms = ["banking_billet"];
+        		  obj.lightbox(payment_forms);
+        		 
+
+              obj.jq('#button_lightbox').click(function(evt) {
+         
+                  var data = {
+                    items: [
+                      {
+                        name: 'Item 1', // nome do item, produto ou serviço
+                        value: 12000 // valor (12000 = R$ 120,00)
+                      },
+                      {
+                        name: 'Item 2', // nome do item, produto ou serviço
+                        value: 4000, // valor (4000 = R$ 40,00)
+                        amount: 1 // quantidade
+                      }
+                    ],
+                  //  shippingCosts: 3560,
+                    customer: false,
+                    shippingAddress: false,
+                    actionForm: 'https://sleepy-wildwood-59183.herokuapp.com/payments'
+                  };
+         
+                  obj.show(data);
+         
+                });
+         
+              });
+            
+        </script>
+    <button rel="gn_lightbox" id='button_lightbox'  class= "btn btn-primary">
+      Pagar Aluguel
+    </button>
+
+    
+		</div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+2016-08-29T01:55:58.925435+00:00 heroku[router]: at=info method=POST path="/payments" host=sleepy-wildwood-59183.herokuapp.com request_id=24c3e9e4-7626-4d83-ada7-e8bd7a91cf03 fwd="191.176.19.72" dyno=web.1 connect=0ms service=5764ms status=302 bytes=499
+2016-08-29T01:55:58.923326+00:00 app[web.1]: {"code"=>200, "data"=>{"barcode"=>"03399.75039 21000.000006 74750.501012 3 69020000002250", "link"=>"https://visualizacaosandbox.gerencianet.com.br/emissao/110276_13_SILE9/A4XB-110276-74750-NAEDO8", "expire_at"=>"2016-08-30", "charge_id"=>97305, "status"=>"waiting", "total"=>2250, "payment"=>"banking_billet"}}
+2016-08-29T01:55:58.923689+00:00 app[web.1]: [24c3e9e4-7626-4d83-ada7-e8bd7a91cf03] Redirected to https://sleepy-wildwood-59183.herokuapp.com/payments/1
+2016-08-29T01:55:59.110075+00:00 app[web.1]: [78b1e4d3-a09a-4c08-87be-fd6ce169cf45] Parameters: {"id"=>"1"}
+2016-08-29T01:55:59.113389+00:00 app[web.1]: [78b1e4d3-a09a-4c08-87be-fd6ce169cf45] [1m[36mContrato Load (1.1ms)[0m [1m[34mSELECT "contratos".* FROM "contratos" WHERE "contratos"."id" = $1 LIMIT $2[0m [["id", 1], ["LIMIT", 1]]
+2016-08-29T01:55:59.118557+00:00 app[web.1]: [78b1e4d3-a09a-4c08-87be-fd6ce169cf45] Rendering payments/show.html.erb within layouts/application
+2016-08-29T01:55:59.124622+00:00 app[web.1]: [78b1e4d3-a09a-4c08-87be-fd6ce169cf45] Rendered payments/show.html.erb within layouts/application (6.0ms)
+2016-08-29T01:55:59.132180+00:00 app[web.1]: [78b1e4d3-a09a-4c08-87be-fd6ce169cf45] [1m[36mConversation Load (0.9ms)[0m [1m[34mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id = 2 OR conversations.recipient_id = 2)[0m
+2016-08-29T01:55:59.147458+00:00 heroku[router]: at=info method=GET path="/payments/1" host=sleepy-wildwood-59183.herokuapp.com request_id=78b1e4d3-a09a-4c08-87be-fd6ce169cf45 fwd="191.176.19.72" dyno=web.1 connect=0ms service=39ms status=200 bytes=12372
+2016-08-29T01:55:59.634323+00:00 heroku[router]
