@@ -54,7 +54,7 @@ params = {
   id: charge["data"]["charge_id"]
 }
  
-puts gerencianet.pay_charge(params: params, body: payment)
+render json: gerencianet.pay_charge(params: params, body: payment)
 
 end
 
